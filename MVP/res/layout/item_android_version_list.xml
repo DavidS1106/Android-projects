@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_view_android_version_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_view_android_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version Name"
+            android:textSize="15dp"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_view_android_version_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version Number"/>
+    </LinearLayout>
+
+
+</LinearLayout>

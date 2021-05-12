@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".views.SettingActivity"
+    tools:showIn="@layout/activity_configurer">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024">
+
+        <TextView
+            android:id="@+id/textViewAddition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addition"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_maj_min_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onMAJBorneMinA"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_b_min_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:labelFor="@+id/editText_min_add"
+                android:text="@string/borne_min"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_min_add"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ems="10"
+
+                android:importantForAutofill="no"
+                android:inputType="number"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/button_maj_min_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onMAJBorneMinA"
+                android:text="@string/maj" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_maj_max_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_b_max_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:labelFor="@+id/editText_max_add"
+                android:text="@string/borne_max"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_max_add"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/button_maj_max_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onMAJBorneMaxA"
+                android:text="@string/maj" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_sous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soustraction"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_maj_min_sous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_min_sous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:labelFor="@+id/editText_min_sous"
+                android:text="@string/borne_min"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_min_sous"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/button_maj_min_sous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onMAJBorneMinS"
+                android:text="@string/maj" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_maj_max_sous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_max_sous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:labelFor="@+id/editText_max_sous"
+                android:text="@string/borne_max"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_max_sous"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/button_maj_max_sous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onMAJBorneMaxS"
+                android:text="@string/maj" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

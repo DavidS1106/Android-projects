@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MentalIpl</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre_de_calculs">Nombre de calculs :</string>
+    <string name="addition">Addition</string>
+    <string name="soustraction">Soustraction</string>
+    <string name="email_du_rapport">email du rapport :</string>
+    <string name="nouvelle_partie">Nouvelle partie</string>
+    <string name="manque_nombre_op">Il faut entrer le nombre d\'opérations</string>
+    <string name="manque_choix_op">Il faut choisir au moins une opération</string>
+    <string name="title_activity_calcul">CalculActivity</string>
+    <string name="calcule">Calcule :</string>
+    <string name="ok">OK</string>
+    <string name="op_eff">opération(s) effectuée(s)</string>
+    <string name="un_calcul">un calcul</string>
+    <string name="encode_rep">Vous devez encoder une réponse</string>
+    <string name="configurer">Configurer</string>
+    <string name="title_activity_configurer">SettingActivity</string>
+    <string name="borne_min">borne min :</string>
+    <string name="maj">maj</string>
+    <string name="borne_max">borne max :</string>
+    <string name="bmAdd">Il faut entrer la borne minimale pour l\'addition</string>
+    <string name="bmaxadd">Il faut entrer la borne maximale pour l\'addition</string>
+    <string name="bmaxsous">Il faut entrer la borne maximale pour la soustraction</string>
+    <string name="bminsous">Il faut entrer la borne minimale pour la soustraction</string>
+    <string name="fini">Partie terminée</string>
+</resources>
