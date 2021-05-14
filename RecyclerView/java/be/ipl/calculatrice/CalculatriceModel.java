@@ -2,9 +2,7 @@ package be.ipl.calculatrice;
 
 import java.util.ArrayList;
 
-/**
- * Created by Gregg on 03-05-18.
- */
+
 
 public class CalculatriceModel {
 
