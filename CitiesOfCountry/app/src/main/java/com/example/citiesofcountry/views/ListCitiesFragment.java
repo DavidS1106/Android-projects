@@ -17,25 +17,14 @@ import com.example.citiesofcountry.viewmodel.CountryViewModel;
 
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
 
- * to handle interaction events.
- * Use the {@link ListCitiesFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ListCitiesFragment extends Fragment {
     private CountryViewModel model;
 
     public ListCitiesFragment() {
-        // Required empty public constructor
+        
     }
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     * @return A new instance of fragment ListCitiesFragment.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static ListCitiesFragment newInstance() {
         ListCitiesFragment fragment = new ListCitiesFragment();
         Bundle args = new Bundle();
@@ -52,7 +41,7 @@ public class ListCitiesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        
         View view = inflater.inflate(R.layout.fragment_list_cities, container, false);
         final TextView rvCities = view.findViewById(R.id.tv_cities);
 
