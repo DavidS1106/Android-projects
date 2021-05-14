@@ -1,6 +1,4 @@
-/**
- * @author Journaldev.com, Gregory Seront
- */
+
 package be.ipl.androidversions;
 
 public class AndroidVersion {
