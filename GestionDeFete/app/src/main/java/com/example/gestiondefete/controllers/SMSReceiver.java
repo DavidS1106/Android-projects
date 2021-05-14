@@ -22,10 +22,10 @@ public class SMSReceiver extends BroadcastReceiver {
             SmsMessage[] messages = new SmsMessage[pdus.length];
             for (int i = 0; i < pdus.length; i++)
             {
-                // Convertir les PDUs en messages
+                
                 messages[i] = SmsMessage.createFromPdu((byte[]) pdus[i]);
             }
-            // Enfin, traiter les messages
+            
             for (SmsMessage message : messages) {
                 String tel = message.getOriginatingAddress();
                 String msg = message.getMessageBody();
