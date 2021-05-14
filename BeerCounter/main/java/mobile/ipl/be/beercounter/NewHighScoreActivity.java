@@ -10,10 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
-/**
- * Activité de gestion du Highscore
- * Explications: https://youtu.be/IElNRU637Ac
- */
+
 public class NewHighScoreActivity extends AppCompatActivity {
 
     public static final String MAX_BEER = "maxBeer";
@@ -29,11 +26,7 @@ public class NewHighScoreActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Sauvegarde de la valeur entrée et retour à l'activité appelante
-     * Explications: https://youtu.be/CbO3jNSo6o0
-     * @param view
-     */
+  
     public void onSave(View view) {
         int nbBeerMax = 0;
         int ok = Activity.RESULT_OK;
